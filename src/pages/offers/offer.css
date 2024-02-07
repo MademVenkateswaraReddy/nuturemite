@@ -1,0 +1,130 @@
+.of-container{
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+}
+.of-container .container-head{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+.of-container .container-text{
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.product-container{
+    display: flex;
+    justify-content: space-evenly;    
+}
+.product-container h1{
+    background-color: #fff;
+    width: 20%;
+    height: 10vh;
+    border-radius: 10px;
+    color: #222;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-top: 1rem;
+}
+.product-container .card-container{
+    width: 50%;
+}
+.card{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.card img{
+    height: 60vh;
+}
+.of-container .card .type{
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid green;
+    border-radius: 5px;
+    background: green;
+    font-size: 20px;
+    font-weight: 600;
+}
+.of-container .card .discount{
+    position: absolute;
+    top: 4.5rem;
+    left: 1rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: red;
+    font-size: 20px;    
+    font-weight: 600;
+}
+.card h4{
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: #8a8484;
+}
+.card h2{
+    color: rgb(47, 217, 47);
+    letter-spacing: 1px;
+}
+.card p del{
+    color: #8a8484;    
+}
+.card p span{
+    font-size: 30px;
+}
+
+/* for small screens */
+@media (max-width: 768px) {
+    .of-container {
+        width: 90%; /* Adjust container width for smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .of-container .container-head {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        padding-bottom: 0.4rem;
+    }
+
+    .of-container .container-text {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .product-container {
+        flex-direction: column; /* Change to a column layout for smaller screens */
+        align-items: center; /* Center align items for smaller screens */
+    }
+
+    .product-container h1 {
+        width: auto; /* Adjust width for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+        margin-bottom: 1rem; /* Add margin for smaller screens */
+        padding: 1rem;
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .product-container .card-container {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .card img {
+        width: 100%; /* Adjust image width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .of-container .card .type,
+    .of-container .card .discount {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .card h4 {
+        margin-top: 0.5rem; /* Adjust margin for smaller screens */
+    }
+
+    .card p span {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}

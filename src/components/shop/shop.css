@@ -1,0 +1,36 @@
+.nav-section{
+    background-color: #afafaf;
+    padding-left: 5rem;
+    border-radius: 0.4rem;
+}
+.shop-head{
+    padding-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.nav-section h1{
+    font-size: 2rem;
+    padding: 1rem;
+    color: greenyellow;
+}
+
+/* for small screens */
+
+@media (max-width: 768px) {
+    .nav-section {
+        padding-left: 2rem; /* Adjust left padding for smaller screens */
+        padding-right: 2rem; /* Add right padding for smaller screens */
+    }
+
+    .shop-head {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center items vertically on smaller screens */
+        gap: 1rem; /* Reduce gap between elements for smaller screens */
+        padding-top: 0.5rem; /* Adjust top padding for smaller screens */
+    }
+
+    .nav-section h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+}

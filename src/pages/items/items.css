@@ -1,0 +1,101 @@
+.sp-container{
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 60%;
+    height: 100%;
+    margin: 2rem auto;
+}
+.sp-container .container-head{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+.sp-container .container-text{
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.item-container .card-container{
+    margin-left: -10rem;
+    margin-right: 10rem;
+}
+.card{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.card img{
+    width: 50vw;
+    height: 60vh;
+}
+.sp-container .card .type{
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid green;
+    border-radius: 5px;
+    background: green;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sp-container .card .discount{
+    position: absolute;
+    top: 4.5rem;
+    left: 1rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: red;
+    font-size: 20px;    
+    font-weight: 600;
+}
+.card h4{
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: #8a8484;
+}
+.card h2{
+    color: rgb(47, 217, 47);
+    letter-spacing: 1px;
+}
+.card p del{
+    color: #8a8484;    
+}
+.card p span{
+    font-size: 30px;
+}
+
+/* for small screens */
+
+@media (max-width: 768px) {
+    .sp-container {
+        width: 90%; /* Adjust container width for smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .item-container .card-container {
+        margin-left: auto; /* Center the card container for smaller screens */
+        margin-right: auto; /* Center the card container for smaller screens */
+    }
+
+    .card img {
+        width: 80vw; /* Adjust image width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .sp-container .card .type,
+    .sp-container .card .discount {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .card h4 {
+        margin-top: 0.5rem; /* Adjust margin for smaller screens */
+    }
+    .card p span{
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .card p span svg {
+        font-size: 20px; /* Adjust star icon size for smaller screens */
+    }
+}

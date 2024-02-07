@@ -1,0 +1,35 @@
+.about-container{
+    padding: 0 2rem;
+}
+.about-container .details-container{
+    padding: 1rem 0;
+}
+.details-container h4, .our-section h4{
+    font-size: 1.6rem;
+}
+.details-container p, .our-section p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #b9b1b1;
+}
+.details-container p .icon,.our-section p .icon{
+    color: #f15b5b;
+}
+
+/* for small screen */
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .details-container h4,
+    .our-section h4 {
+        font-size: 1.4rem; /* Adjust font size for smaller screens */
+    }
+
+    .details-container p,
+    .our-section p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}

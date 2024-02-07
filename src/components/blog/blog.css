@@ -1,0 +1,29 @@
+.vertical-timeline-element--work{
+    color: #5e5959;
+}
+.actions{
+    text-align: center;
+}
+.actions .date, .client, .comments{
+    margin-right: 10px;
+}
+
+/* for small screens */
+
+@media (max-width: 768px) {
+    .vertical-timeline-element--work {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column; /* Adjust layout for smaller screens */
+        align-items: center; /* Center align for smaller screens */
+    }
+
+    .actions .date,
+    .actions .client,
+    .actions .comments {
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+}

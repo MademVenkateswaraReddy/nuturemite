@@ -1,0 +1,111 @@
+.home-container{
+    margin: 2rem;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.home-container .corousal{
+    background: #078c78;
+    border: 1px solod #078c78;
+    outline: #078c78;
+    border-radius: 0.2rem;
+
+    .cor-container{
+        padding: 2rem;
+
+        h3{
+            color: #141313;
+            font-weight: 500;
+        }
+        h1{
+            margin-top: 0.5rem;
+            color: #afafaf;
+            font-weight: 900;
+            font-size: 40px;
+              
+            .blinking-text {
+                animation: blink 0.5s infinite;
+              }
+            span{
+                margin-left: 1.4rem;
+                font-size: 4rem;
+                color: red;
+
+                
+            }
+        }
+        h2{
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+        p{
+            text-transform: uppercase;
+            margin-top: 5px;
+            color: gold;
+            font-size: 11px;
+        }
+    }
+}
+
+/* for small screens */
+
+@media (max-width: 768px) {
+    .home-container {
+        margin: 0.5rem;
+    }
+
+    .home-container .cor-container {
+        padding: 1rem;
+    }
+
+    .home-container .cor-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-container .cor-container span {
+        font-size: 2rem;
+    }
+
+    .home-container .cor-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-container .cor-container p {
+        font-size: 0.7rem;
+    }
+}
+/* Add this CSS to your home.css file */
+/* Adjusting styles for 768px */
+@media (max-width: 768px) {
+    .carousel .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carousel .slide h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel .slide h1 {
+        font-size: 2rem;
+    }
+
+    .carousel .slide h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel .slide p {
+        font-size: 1rem;
+    }
+
+    .carousel .slide h1 .blinking-text {
+        font-size: 2.5rem;
+    }
+}
