@@ -70,6 +70,7 @@ export const SideNav = () => {
                     data.map((item) => (
                         <div className='card' key={item.Image}>
                             <img className='item-img' src={item.Image} alt="item" />
+                            <div className="card-text">
                             <p className="type">{item.type}</p>
                             <p className="discount">{item.discount}</p>
                             <h4>{item.brand}</h4>
@@ -84,6 +85,7 @@ export const SideNav = () => {
                             <p><del><BsCurrencyRupee/>{item.cost}</del><span><BsCurrencyRupee/>{item.discount1}</span></p>
                             <div className="cart-link">
                                 <a href="#"><FaCartPlus/></a>
+                            </div>
                             </div>
                         </div>
                     ))
