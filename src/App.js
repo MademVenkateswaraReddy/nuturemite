@@ -9,22 +9,24 @@ import Cart from './components/cart/Cart';
 import MyAccount from './components/myAccount/MyAccount';
 import About from './components/about/About';
 import Login from './components/login/Login';
+import BackTop from './pages/back/BackTop'
 
 function App() {
   return (
     <div className="App">
-      <Router>
+       <Router>
         <Header />
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='blog' element={<Blog />} />
-          <Route exact path='shop' element={<Shop />} />
-          <Route exact path='cart' element={<Cart />} />
-          <Route exact path='my-account' element={<MyAccount />} />
-          <Route exact path='about-us' element={<About />} />
-          <Route exact path='login' element={<Login />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="blog" element={<Blog />} />
+          <Route exact path="shop" element={<Shop />} />
+          <Route exact path="cart" element={<Cart />} />
+          <Route exact path="my-account" element={<MyAccount />} />
+          <Route exact path="about-us" element={<About />} />
+          <Route exact path="login" element={<Login />} />
         </Routes>
         <Footer />
+        <BackTop />
       </Router>
     </div>
   );

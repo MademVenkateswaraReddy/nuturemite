@@ -65,13 +65,13 @@ function Header() {
                             <ul>
                                 {showIcons && (
                                     <ul className={isMobile ? 'mobile-list' : ''}>
-                                        <li><Link to="/">Home</Link></li>
-                                        <li><Link to="blog">Blog</Link></li>
-                                        <li><Link to="shop">Shop</Link></li>
-                                        <li><Link to="cart">Cart</Link></li>
-                                        <li><Link to="my-account">My Account</Link></li>
-                                        <li><Link to="about-us">About Us</Link></li>
-                                        <li><Link to="login">Login</Link></li>
+                                        <li><Link to="/" smooth={true} duration={500}>Home</Link></li>
+                                        <li><Link to="blog" smooth={true} duration={500}>Blog</Link></li>
+                                        <li><Link to="shop" smooth={true} duration={500}>Shop</Link></li>
+                                        <li><Link to="cart" smooth={true} duration={500}>Cart</Link></li>
+                                        <li><Link to="my-account" smooth={true} duration={500}>My Account</Link></li>
+                                        <li><Link to="about-us" smooth={true} duration={500}>About Us</Link></li>
+                                        <li><Link to="login" smooth={true} duration={500}>Login</Link></li>
                                     </ul>
                                 )}
                                 <div className="contact-icons">
